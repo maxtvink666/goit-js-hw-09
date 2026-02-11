@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.css"
+    />
+
+    <title>Gallery</title>
+    <script type="module" crossorigin src="/vanilla-app-template/1-gallery.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/gallery-CZvLwnnc.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-CgTBfC_f.js">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/gallery-CIBhdfUa.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/vendor-DkczhqSJ.css">
+  </head>
+  <body>
+    <ul class="gallery"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
+    <script>
+      new SimpleLightbox('.gallery a', {
+        captions: true,
+        captionsData: 'alt',
+        captionDelay: 250,
+        closeText: '×',
+        navText: ['←', '→'],
+      });
+    </script>
+
+  </body>
+</html>
